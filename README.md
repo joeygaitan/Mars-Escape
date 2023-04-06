@@ -1,4 +1,4 @@
-# Game: Mars Escape
+# Mars Escape
 ## Game Point
 
 * The point of the game is to repair your crashed space ship using a assembler to 
@@ -13,7 +13,8 @@ leave
 ### Live Game Structure
 * The game will be a 20 by 20 grid
 * If Nullptr then it will be displayed as ground
-   <br></br> <strong>(World types and states)</strong>
+   <br></br> 
+    <strong>(World types and states)</strong>
 * Player: @
 * Ground: .
 * Rocket escape exit: ^
@@ -23,5 +24,25 @@ leave
 
 ### Development environment
 * 20x20 grid to play around with random generation and to see how game states 
-* change over time.
+* changes over time.
 * Additional auto win in the inventory selection.
+
+### How To Run the Game
+
+#### first option
+
+* git clone this project onto your computer and run the Main.exe file. 
+
+#### second option 
+
+* install visual studio code.
+* add c++ to your computer and add in cmake extension into visual studio code
+* create a build folder in the root repo (folder). 
+* then go inside of that folder and run cmake ../
+* then run make
+* then run ./Project
+
+#### Fourth option 
+
+* install visual studio
+* import the projec in the visual studio folder and run it in visual studio.

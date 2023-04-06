@@ -1,7 +1,7 @@
 #include "Player.h"
-#include "../GameMap/Grid/Grid.h"
-#include "../WorldObjects/WorldObject.h"
-#include "Inventory/Inventory.h"
+#include "Grid.h"
+#include "WorldObject.h"
+#include "Inventory.h"
 
 Player::Player(int health, int x, int y)
     : m_health(health)
@@ -15,10 +15,7 @@ bool Player::PlayerController(WorldObject* pWorldObject, std::vector<WorldObject
     if (m_health <= 0)
         return false;
 
-    std::cout << "player input: ";
-    char input;
-
-    std::cin >> input;
+    char input = _getch();
 
     switch (input)
     {
@@ -47,8 +44,7 @@ bool Player::PlayerController(WorldObject* pWorldObject, std::vector<WorldObject
         DisplayGameInfo();
         break;
     default:
-        // printw("Invalid input: %c\n", input);
-        std::cout << input << "Invalid input\n";
+        std::cout << "Invalid input";
         break;
     }
 
@@ -92,10 +88,12 @@ void Player::PlayerAction(WorldObject* pWorldObject)
 
 void Player::DisplayGameInfo()
 {
+    system("cls");
     std::cout << "'.': floor type \n" << "'+': iron resource type\n" << "'0': copper resource type\n" << "'#': cobalt resource type\n" << "'&': Gold Resource Type";
     std::cout << "'^': Rocket \n" << "'$': Assembler \n" << "'e': depleted resource\n";
     std::cout << "'pressing e': will interact with that object you are standing on.";
-    std::cin.get();
+    system("pause");
+    system("cls");
 }
 
 bool Player::IsAlive()

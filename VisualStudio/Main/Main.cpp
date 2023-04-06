@@ -1,7 +1,7 @@
 #include <iostream>
 #include <time.h>
 #include <stdlib.h>
-#include "./Game/Game.h"
+#include "Game.h"
 #include <unordered_map>
 
 int main()
@@ -21,7 +21,7 @@ int main()
         , 0
         , 20
         , 20
-        , {
+        , { 
                 {
                  WorldObject::ComponentType::kCpu, {
                     { WorldObject::ResourceType::kCopper, 5 }
@@ -48,8 +48,7 @@ int main()
                 , { WorldObject::ComponentType::kEngine, rand() % 2 + 1 }
                 , { WorldObject::ComponentType::kBooster, rand() % 2 + 1 }
             }
-        }
-     );
+        });
 
-     newGame.GameLoop();
+    newGame.GameLoop();
 }

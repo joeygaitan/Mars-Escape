@@ -17,7 +17,8 @@ void Game::StartInfo()
     std::cout << "Welcome to rocket escape" << "\n" << "your goal is to mine for resources (stand on resource and press e). \n";
     std::cout << " then build parts at the assembler (bottom right of the screen) in order to fix your rocket to leave the planet. \n";
     std::cout << "You have an inventory at the top of the screen and can figure out what everything is by pressing e. \n";
-    std::cin.get();
+    system("pause");
+    system("cls");
 }
 
 void Game::GameLoop()

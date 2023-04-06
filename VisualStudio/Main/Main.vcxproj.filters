@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{a9a0430d-4677-4d42-a0bd-ca478e730fa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\World Objects">
+      <UniqueIdentifier>{e47d274f-6a70-42e5-a9bc-f37f46ec3b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\World Objects\Interface">
+      <UniqueIdentifier>{d99769ee-8c6c-4e65-b66c-ac2e26d02c5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Player">
+      <UniqueIdentifier>{d368eb0e-51e2-46da-a7d6-1e23c10e5b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Grid">
+      <UniqueIdentifier>{58474540-aa11-4ae9-9552-78bb44eb54c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Game Play">
+      <UniqueIdentifier>{b0b7b8e5-65ba-455f-a1ee-7105d12cd017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Inventory">
+      <UniqueIdentifier>{460d7776-ffc2-4da6-93ab-9f35f9956cf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\World Objects\Assembler">
+      <UniqueIdentifier>{a9171d96-002d-41e6-8128-f8d814b3d26a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\World Objects\Rocket">
+      <UniqueIdentifier>{7e4e83a6-f552-4d09-9bb3-76a66e90c35c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\World Objects\Abstract base class for enums">
+      <UniqueIdentifier>{8956a792-aec2-4083-a5a1-3c0d11fc57d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\World Objects\Resources">
+      <UniqueIdentifier>{5a609b40-8f8e-46eb-b4ba-304434635278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\World Objects\Resources\Resource">
+      <UniqueIdentifier>{917063cd-2f7a-44c3-bf4f-847f94c893b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\World Objects\Resources\Component">
+      <UniqueIdentifier>{a097b936-0dc3-4f20-b93a-7852b19fd5f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Game\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Game\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game\Game Play</Filter>
+    </ClCompile>
+    <ClCompile Include="Assembler.cpp">
+      <Filter>Game\World Objects\Assembler</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Game\Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource.cpp">
+      <Filter>Game\World Objects\Resources\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Rocket.cpp">
+      <Filter>Game\World Objects\Rocket</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldObject.cpp">
+      <Filter>Game\World Objects\Abstract base class for enums</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Game\World Objects\Resources\Component</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IWorldObject.h">
+      <Filter>Game\World Objects\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Game\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Game\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game\Game Play</Filter>
+    </ClInclude>
+    <ClInclude Include="Assembler.h">
+      <Filter>Game\World Objects\Assembler</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>Game\Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Game\World Objects\Resources\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Rocket.h">
+      <Filter>Game\World Objects\Rocket</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldObject.h">
+      <Filter>Game\World Objects\Abstract base class for enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Game\World Objects\Resources\Component</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
