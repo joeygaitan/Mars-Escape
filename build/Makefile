@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named my_executable
+# Target rules for targets named Project
 
 # Build rule for target.
-my_executable: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_executable
-.PHONY : my_executable
+Project: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Project
+.PHONY : Project
 
 # fast build rule for target.
-my_executable/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/build
-.PHONY : my_executable/fast
+Project/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/build
+.PHONY : Project/fast
 
 Game/Game.o: Game/Game.cpp.o
 .PHONY : Game/Game.o
 
 # target to build an object file
 Game/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/Game/Game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Game/Game.cpp.o
 .PHONY : Game/Game.cpp.o
 
 Game/Game.i: Game/Game.cpp.i
@@ -142,7 +142,7 @@ Game/Game.i: Game/Game.cpp.i
 
 # target to preprocess a source file
 Game/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/Game/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Game/Game.cpp.i
 .PHONY : Game/Game.cpp.i
 
 Game/Game.s: Game/Game.cpp.s
@@ -150,7 +150,7 @@ Game/Game.s: Game/Game.cpp.s
 
 # target to generate assembly for a file
 Game/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/Game/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Game/Game.cpp.s
 .PHONY : Game/Game.cpp.s
 
 GameMap/Grid/Grid.o: GameMap/Grid/Grid.cpp.o
@@ -158,7 +158,7 @@ GameMap/Grid/Grid.o: GameMap/Grid/Grid.cpp.o
 
 # target to build an object file
 GameMap/Grid/Grid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/GameMap/Grid/Grid.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/GameMap/Grid/Grid.cpp.o
 .PHONY : GameMap/Grid/Grid.cpp.o
 
 GameMap/Grid/Grid.i: GameMap/Grid/Grid.cpp.i
@@ -166,7 +166,7 @@ GameMap/Grid/Grid.i: GameMap/Grid/Grid.cpp.i
 
 # target to preprocess a source file
 GameMap/Grid/Grid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/GameMap/Grid/Grid.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/GameMap/Grid/Grid.cpp.i
 .PHONY : GameMap/Grid/Grid.cpp.i
 
 GameMap/Grid/Grid.s: GameMap/Grid/Grid.cpp.s
@@ -174,7 +174,7 @@ GameMap/Grid/Grid.s: GameMap/Grid/Grid.cpp.s
 
 # target to generate assembly for a file
 GameMap/Grid/Grid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/GameMap/Grid/Grid.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/GameMap/Grid/Grid.cpp.s
 .PHONY : GameMap/Grid/Grid.cpp.s
 
 Player/Inventory/Inventory.o: Player/Inventory/Inventory.cpp.o
@@ -182,7 +182,7 @@ Player/Inventory/Inventory.o: Player/Inventory/Inventory.cpp.o
 
 # target to build an object file
 Player/Inventory/Inventory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/Player/Inventory/Inventory.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Player/Inventory/Inventory.cpp.o
 .PHONY : Player/Inventory/Inventory.cpp.o
 
 Player/Inventory/Inventory.i: Player/Inventory/Inventory.cpp.i
@@ -190,7 +190,7 @@ Player/Inventory/Inventory.i: Player/Inventory/Inventory.cpp.i
 
 # target to preprocess a source file
 Player/Inventory/Inventory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/Player/Inventory/Inventory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Player/Inventory/Inventory.cpp.i
 .PHONY : Player/Inventory/Inventory.cpp.i
 
 Player/Inventory/Inventory.s: Player/Inventory/Inventory.cpp.s
@@ -198,7 +198,7 @@ Player/Inventory/Inventory.s: Player/Inventory/Inventory.cpp.s
 
 # target to generate assembly for a file
 Player/Inventory/Inventory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/Player/Inventory/Inventory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Player/Inventory/Inventory.cpp.s
 .PHONY : Player/Inventory/Inventory.cpp.s
 
 Player/Player.o: Player/Player.cpp.o
@@ -206,7 +206,7 @@ Player/Player.o: Player/Player.cpp.o
 
 # target to build an object file
 Player/Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/Player/Player.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Player/Player.cpp.o
 .PHONY : Player/Player.cpp.o
 
 Player/Player.i: Player/Player.cpp.i
@@ -214,7 +214,7 @@ Player/Player.i: Player/Player.cpp.i
 
 # target to preprocess a source file
 Player/Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/Player/Player.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Player/Player.cpp.i
 .PHONY : Player/Player.cpp.i
 
 Player/Player.s: Player/Player.cpp.s
@@ -222,7 +222,7 @@ Player/Player.s: Player/Player.cpp.s
 
 # target to generate assembly for a file
 Player/Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/Player/Player.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/Player/Player.cpp.s
 .PHONY : Player/Player.cpp.s
 
 WorldObjects/Assembler/Assembler.o: WorldObjects/Assembler/Assembler.cpp.o
@@ -230,7 +230,7 @@ WorldObjects/Assembler/Assembler.o: WorldObjects/Assembler/Assembler.cpp.o
 
 # target to build an object file
 WorldObjects/Assembler/Assembler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Assembler/Assembler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Assembler/Assembler.cpp.o
 .PHONY : WorldObjects/Assembler/Assembler.cpp.o
 
 WorldObjects/Assembler/Assembler.i: WorldObjects/Assembler/Assembler.cpp.i
@@ -238,7 +238,7 @@ WorldObjects/Assembler/Assembler.i: WorldObjects/Assembler/Assembler.cpp.i
 
 # target to preprocess a source file
 WorldObjects/Assembler/Assembler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Assembler/Assembler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Assembler/Assembler.cpp.i
 .PHONY : WorldObjects/Assembler/Assembler.cpp.i
 
 WorldObjects/Assembler/Assembler.s: WorldObjects/Assembler/Assembler.cpp.s
@@ -246,7 +246,7 @@ WorldObjects/Assembler/Assembler.s: WorldObjects/Assembler/Assembler.cpp.s
 
 # target to generate assembly for a file
 WorldObjects/Assembler/Assembler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Assembler/Assembler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Assembler/Assembler.cpp.s
 .PHONY : WorldObjects/Assembler/Assembler.cpp.s
 
 WorldObjects/Boulder/Boulder.o: WorldObjects/Boulder/Boulder.cpp.o
@@ -254,7 +254,7 @@ WorldObjects/Boulder/Boulder.o: WorldObjects/Boulder/Boulder.cpp.o
 
 # target to build an object file
 WorldObjects/Boulder/Boulder.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Boulder/Boulder.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Boulder/Boulder.cpp.o
 .PHONY : WorldObjects/Boulder/Boulder.cpp.o
 
 WorldObjects/Boulder/Boulder.i: WorldObjects/Boulder/Boulder.cpp.i
@@ -262,7 +262,7 @@ WorldObjects/Boulder/Boulder.i: WorldObjects/Boulder/Boulder.cpp.i
 
 # target to preprocess a source file
 WorldObjects/Boulder/Boulder.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Boulder/Boulder.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Boulder/Boulder.cpp.i
 .PHONY : WorldObjects/Boulder/Boulder.cpp.i
 
 WorldObjects/Boulder/Boulder.s: WorldObjects/Boulder/Boulder.cpp.s
@@ -270,7 +270,7 @@ WorldObjects/Boulder/Boulder.s: WorldObjects/Boulder/Boulder.cpp.s
 
 # target to generate assembly for a file
 WorldObjects/Boulder/Boulder.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Boulder/Boulder.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Boulder/Boulder.cpp.s
 .PHONY : WorldObjects/Boulder/Boulder.cpp.s
 
 WorldObjects/Component/Component.o: WorldObjects/Component/Component.cpp.o
@@ -278,7 +278,7 @@ WorldObjects/Component/Component.o: WorldObjects/Component/Component.cpp.o
 
 # target to build an object file
 WorldObjects/Component/Component.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Component/Component.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Component/Component.cpp.o
 .PHONY : WorldObjects/Component/Component.cpp.o
 
 WorldObjects/Component/Component.i: WorldObjects/Component/Component.cpp.i
@@ -286,7 +286,7 @@ WorldObjects/Component/Component.i: WorldObjects/Component/Component.cpp.i
 
 # target to preprocess a source file
 WorldObjects/Component/Component.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Component/Component.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Component/Component.cpp.i
 .PHONY : WorldObjects/Component/Component.cpp.i
 
 WorldObjects/Component/Component.s: WorldObjects/Component/Component.cpp.s
@@ -294,7 +294,7 @@ WorldObjects/Component/Component.s: WorldObjects/Component/Component.cpp.s
 
 # target to generate assembly for a file
 WorldObjects/Component/Component.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Component/Component.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Component/Component.cpp.s
 .PHONY : WorldObjects/Component/Component.cpp.s
 
 WorldObjects/Resource/Resource.o: WorldObjects/Resource/Resource.cpp.o
@@ -302,7 +302,7 @@ WorldObjects/Resource/Resource.o: WorldObjects/Resource/Resource.cpp.o
 
 # target to build an object file
 WorldObjects/Resource/Resource.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Resource/Resource.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Resource/Resource.cpp.o
 .PHONY : WorldObjects/Resource/Resource.cpp.o
 
 WorldObjects/Resource/Resource.i: WorldObjects/Resource/Resource.cpp.i
@@ -310,7 +310,7 @@ WorldObjects/Resource/Resource.i: WorldObjects/Resource/Resource.cpp.i
 
 # target to preprocess a source file
 WorldObjects/Resource/Resource.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Resource/Resource.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Resource/Resource.cpp.i
 .PHONY : WorldObjects/Resource/Resource.cpp.i
 
 WorldObjects/Resource/Resource.s: WorldObjects/Resource/Resource.cpp.s
@@ -318,7 +318,7 @@ WorldObjects/Resource/Resource.s: WorldObjects/Resource/Resource.cpp.s
 
 # target to generate assembly for a file
 WorldObjects/Resource/Resource.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Resource/Resource.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Resource/Resource.cpp.s
 .PHONY : WorldObjects/Resource/Resource.cpp.s
 
 WorldObjects/Rocket/Rocket.o: WorldObjects/Rocket/Rocket.cpp.o
@@ -326,7 +326,7 @@ WorldObjects/Rocket/Rocket.o: WorldObjects/Rocket/Rocket.cpp.o
 
 # target to build an object file
 WorldObjects/Rocket/Rocket.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Rocket/Rocket.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Rocket/Rocket.cpp.o
 .PHONY : WorldObjects/Rocket/Rocket.cpp.o
 
 WorldObjects/Rocket/Rocket.i: WorldObjects/Rocket/Rocket.cpp.i
@@ -334,7 +334,7 @@ WorldObjects/Rocket/Rocket.i: WorldObjects/Rocket/Rocket.cpp.i
 
 # target to preprocess a source file
 WorldObjects/Rocket/Rocket.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Rocket/Rocket.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Rocket/Rocket.cpp.i
 .PHONY : WorldObjects/Rocket/Rocket.cpp.i
 
 WorldObjects/Rocket/Rocket.s: WorldObjects/Rocket/Rocket.cpp.s
@@ -342,7 +342,7 @@ WorldObjects/Rocket/Rocket.s: WorldObjects/Rocket/Rocket.cpp.s
 
 # target to generate assembly for a file
 WorldObjects/Rocket/Rocket.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/Rocket/Rocket.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/Rocket/Rocket.cpp.s
 .PHONY : WorldObjects/Rocket/Rocket.cpp.s
 
 WorldObjects/WorldObject.o: WorldObjects/WorldObject.cpp.o
@@ -350,7 +350,7 @@ WorldObjects/WorldObject.o: WorldObjects/WorldObject.cpp.o
 
 # target to build an object file
 WorldObjects/WorldObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/WorldObject.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/WorldObject.cpp.o
 .PHONY : WorldObjects/WorldObject.cpp.o
 
 WorldObjects/WorldObject.i: WorldObjects/WorldObject.cpp.i
@@ -358,7 +358,7 @@ WorldObjects/WorldObject.i: WorldObjects/WorldObject.cpp.i
 
 # target to preprocess a source file
 WorldObjects/WorldObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/WorldObject.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/WorldObject.cpp.i
 .PHONY : WorldObjects/WorldObject.cpp.i
 
 WorldObjects/WorldObject.s: WorldObjects/WorldObject.cpp.s
@@ -366,7 +366,7 @@ WorldObjects/WorldObject.s: WorldObjects/WorldObject.cpp.s
 
 # target to generate assembly for a file
 WorldObjects/WorldObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/WorldObjects/WorldObject.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/WorldObjects/WorldObject.cpp.s
 .PHONY : WorldObjects/WorldObject.cpp.s
 
 main.o: main.cpp.o
@@ -374,7 +374,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -382,7 +382,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -390,7 +390,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_executable.dir/build.make CMakeFiles/my_executable.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -401,7 +401,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... my_executable"
+	@echo "... Project"
 	@echo "... Game/Game.o"
 	@echo "... Game/Game.i"
 	@echo "... Game/Game.s"
