@@ -1,3 +1,0 @@
-/home/mister-standing/personal_projects/escape_mars/CMakeFiles/Project.dir
-/home/mister-standing/personal_projects/escape_mars/CMakeFiles/edit_cache.dir
-/home/mister-standing/personal_projects/escape_mars/CMakeFiles/rebuild_cache.dir
