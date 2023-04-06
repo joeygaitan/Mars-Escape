@@ -17,7 +17,9 @@ bool Player::PlayerController(WorldObject* pWorldObject, std::vector<WorldObject
 
     char input;
 
-    std::cout << "character Choice: ";
+    while ((input = getchar()) == '\n') {
+        std::printf("waiting for input....\n");
+    }
     
     std::scanf("%c", &input);
 
