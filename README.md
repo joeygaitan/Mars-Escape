@@ -1,4 +1,4 @@
-# Game: Escape Mars
+# Game: Mars Escape
 ## Game Point
 
 * The point of the game is to repair your crashed space ship using a assembler to 
@@ -13,7 +13,7 @@ leave
 ### Live Game Structure
 * The game will be a 20 by 20 grid
 * If Nullptr then it will be displayed as ground
-    <strong>(World types and states)</strong>
+   <br></br> <strong>(World types and states)</strong>
 * Player: @
 * Ground: .
 * Rocket escape exit: ^
