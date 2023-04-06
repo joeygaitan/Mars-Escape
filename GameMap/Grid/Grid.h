@@ -3,6 +3,7 @@
 #include <vector>
 #include <unordered_map>
 #include <map>
+#include <ncurses.h>
 #include "../../WorldObjects/WorldObject.h"
 #include "../../Player/Player.h"
 #include "../../WorldObjects/Resource/Resource.h"

@@ -15,13 +15,12 @@ bool Player::PlayerController(WorldObject* pWorldObject, std::vector<WorldObject
     if (m_health <= 0)
         return false;
 
-    char input;
+    clear();
 
-    while ((input = getchar()) == '\n') {
-        std::printf("waiting for input....\n");
-    }
-    
-    std::scanf("%c", &input);
+    refresh();  // Refresh the screen
+    char input = getch();
+
+    std::cout << "---------------------input: [" << input << "]\n";
 
     switch (input)
     {
@@ -50,7 +49,8 @@ bool Player::PlayerController(WorldObject* pWorldObject, std::vector<WorldObject
         DisplayGameInfo();
         break;
     default:
-        std::cout << "Invalid input";
+        // printw("Invalid input: %c\n", input);
+        std::cout << input << "                Invalid input\n";
         break;
     }
 
@@ -94,12 +94,11 @@ void Player::PlayerAction(WorldObject* pWorldObject)
 
 void Player::DisplayGameInfo()
 {
-    system("cls");
     std::cout << "'.': floor type \n" << "'+': iron resource type\n" << "'0': copper resource type\n" << "'#': cobalt resource type\n" << "'&': Gold Resource Type";
     std::cout << "'^': Rocket \n" << "'$': Assembler \n" << "'e': depleted resource\n";
     std::cout << "'pressing e': will interact with that object you are standing on.";
-    system("pause");
-    system("cls");
+    std::cin.get();
+    clear();
 }
 
 bool Player::IsAlive()

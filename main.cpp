@@ -21,7 +21,7 @@ int main()
         , 0
         , 20
         , 20
-        , { 
+        , {
                 {
                  WorldObject::ComponentType::kCpu, {
                     { WorldObject::ResourceType::kCopper, 5 }
@@ -50,6 +50,4 @@ int main()
             }
         }
      );
-
-    newGame.GameLoop();
 }

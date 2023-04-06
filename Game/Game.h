@@ -1,5 +1,6 @@
 #pragma once
 #include <map>
+#include <ncurses.h>
 #include "../Player/Player.h"
 #include "../WorldObjects/WorldObject.h"
 #include "../GameMap/Grid/Grid.h"

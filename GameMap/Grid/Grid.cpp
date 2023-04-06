@@ -117,7 +117,7 @@ void Grid::PopulateDynamicGrid(std::map<ComponentType, std::map<ResourceType, in
 
 void Grid::DisplayGrid(Player& player)
 {
-    system("cls");
+    clear();
     std::cout << "Check game info by pressing f on your keyboard" << "\n";
     player.PlayerStats();
     player.DisplayInventory();

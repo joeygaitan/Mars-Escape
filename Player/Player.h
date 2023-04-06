@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <stdio.h>
+#include <ncurses.h>
 #include "./Inventory/Inventory.h"
 
 class Grid;
