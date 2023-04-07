@@ -7,8 +7,12 @@ to assembly the right resources in order to fix your ship and repair your ship a
 leave
 
  ### Button Features:
-* F display's game facts and traits of objects
-* E mines and interacts with unique objects like the assembler and the rocket.
+* w moves the player character up
+* a moves the player character left
+* s moves the player character down
+* d moves the player character right
+* f display's game facts and traits of objects
+* e mines and interacts with unique objects like the assembler and the rocket.
 
 ### Live Game Structure
 * The game will be a 20 by 20 grid
